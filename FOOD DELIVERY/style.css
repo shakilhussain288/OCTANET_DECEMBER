@@ -1,0 +1,259 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS VARIABLE */
+
+:root {
+    --navbar-color: black;
+}
+
+/* NAVIGATION  BAR */
+#navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    font-family: 'Bree Serif', serif;
+
+}
+
+#navbar:before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.65;
+}
+
+/* NAVIGATION LIST  STYLING */
+#navbar ul {
+    list-style: none;
+    font-family: 'Bree Serif', serif;
+    /* font-family: 'Baloo Bhai', cursive; */
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font: 1.3rem;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    padding: 4px 20px;
+    font-size: 1rem;
+    display: block;
+    color: white;
+    border-radius: 23px;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+    font-style: italic;
+}
+
+/* NAVIGATION BAR: LOGO AND IMAGE */
+#logo {
+    margin: 0;
+
+}
+
+#logo img {
+    width: 60px;
+    height: 60px;
+    padding: 23px 13px;
+}
+
+
+/* HOME*/
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    align-items: center;
+    justify-content: center;
+    height: 462px;
+}
+
+#home::before {
+    content: "";
+    background: url('https://images.unsplash.com/photo-1481349518771-20055b2a7b24?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2139&q=80')no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 542px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+#home h1 {
+    color: white;
+    font-size: 2.2rem;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p {
+    color: white;
+    font-size: 1rem;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+
+.h-primary {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+
+.h-secondary {
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn {
+    padding: 3px 20px;
+    background-color: brown;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin: 13px 13px;
+}
+
+.btn:hover {
+    background-color: grey;
+    color: white;
+    border: 2px solid black;
+    cursor: pointer;
+
+}
+
+/* services Section */
+#services {
+    margin: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#services .box {
+    border: 2px solid brown;
+    background-color: rgb(207, 253, 248);
+    padding: 53px;
+    margin: 10px 25px;
+    border-radius: 23px;
+    height: 237px;
+    width: 756px;
+
+}
+
+#services .box img {
+    width: 120px;
+    margin: auto;
+    display: block;
+}
+
+#services .box p {
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* CLIENTS SECTION */
+#client-section {
+    height: 368px;
+}
+
+.client-item {
+    padding: 34px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('../img2.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height: 80%;
+    z-index: -1;
+    opacity: 0.55;
+
+}
+
+#client-section #clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 150px;
+    padding: 8px 28px
+}
+
+/* CONTACT SECTION */
+#contact {
+    position: relative;
+    height: 380px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('contact.jpeg')no-repeat center center/cover;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 6px;
+
+}
+#sub{
+
+}
+#sub:hover{
+    background-color: aliceblue;
+    border: 3px solid black;
+
+}
+
+
+
+
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+    margin-top: 46px;
+}
